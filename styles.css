@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow:wght@600&display=swap");
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-family: "Barlow", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cyanColor:hsl(171, 66%, 44%);
+  --blueColor: hsl(233, 100%, 69%);
+  --greyColor:hsl(210, 10%, 33%);
+  --greyLinght: hsl(201, 11%, 66%);
+}
+
+.portada {
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portada .logo {
+  margin-bottom: 3rem;
+}
+.portada .title {
+  color: var(--greyColor);
+  font-family: "Bai Jamjuree";
+  font-size: 2.1rem;
+}
+.portada .text {
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem;
+  width: 40%;
+  color: var(--greyLinght);
+  font-family: "Bai Jamjuree";
+  line-height: 1.5rem;
+}
+
+.download {
+  margin-bottom: 5rem;
+}
+.download .green {
+  cursor: pointer;
+  background: var(--cyanColor);
+  padding: 0.7rem 2rem;
+  border: none;
+  margin: 0.5rem;
+  border-radius: 30px;
+  border-bottom: 2px solid rgb(2, 129, 112);
+  color: white;
+  transition: 0.5s ease all;
+}
+.download .green:hover {
+  opacity: 0.7;
+}
+.download .blue {
+  cursor: pointer;
+  background: var(--blueColor);
+  padding: 0.7rem 2rem;
+  border: none;
+  margin: 0.5rem;
+  border-radius: 30px;
+  border-bottom: 2px solid rgb(2, 61, 129);
+  color: white;
+  transition: 0.5s ease all;
+}
+.download .blue:hover {
+  opacity: 0.7;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+.info .title-text {
+  font-family: "Bai Jamjuree";
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.info .paragranp {
+  font-family: "Bai Jamjuree";
+  text-align: center;
+  width: 45%;
+  color: var(--greyLinght);
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+.box-info {
+  display: flex;
+  margin: 4rem 0;
+}
+.box-info img {
+  width: 60%;
+  height: 30%;
+}
+.box-info .description {
+  margin: 7%;
+}
+.box-info .description .subtitle {
+  font-size: 1.5rem;
+  font-family: "Bai Jamjuree";
+}
+.box-info .description .subparagranp {
+  line-height: 1.5rem;
+  margin: 0.5rem 0 3rem 0;
+  font-family: "Bai Jamjuree";
+  color: var(--greyLinght);
+}
+
+.tactil {
+  margin: 5rem 16%;
+}
+
+.job {
+  display: flex;
+  margin: 0 10rem;
+}
+.job .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+.job .box img {
+  width: 2.5rem;
+  margin-bottom: 2rem;
+}
+.job .box .text-light {
+  font-family: "Bai Jamjuree";
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.job .box .paragraph-light {
+  text-align: center;
+  width: 20rem;
+  font-family: "Bai Jamjuree";
+  line-height: 1.5rem;
+  height: 10%;
+  color: var(--greyLinght);
+}
+
+.sitios {
+  margin: 5rem;
+}
+.sitios img {
+  width: 10rem;
+  margin: 2rem;
+}
+
+.pie-page {
+  background: #e7e7e7;
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-evenly;
+}
+.pie-page img {
+  width: 4rem;
+}
+.pie-page .links {
+  display: flex;
+  flex-direction: column;
+}
+.pie-page .links .link {
+  text-decoration: none;
+  line-height: 2rem;
+  color: var(--greyColor);
+}
+.pie-page .links .link:hover {
+  color: var(--cyanColor);
+}
+.pie-page .redes .img {
+  width: 1.5rem;
+  margin: 0.8rem;
+  padding-top: 1rem;
+}
+.pie-page .redes .img:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 550px) {
+  .portada {
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+  .portada .logo {
+    margin-top: 30rem;
+  }
+  .portada .title {
+    width: 90%;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .portada .text {
+    width: 84%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .download {
+    display: flex;
+    flex-direction: column;
+  }
+  .download .green {
+    margin-top: 2rem;
+    padding: 1.5rem 9rem;
+    font-size: 1.4rem;
+    border-radius: 50px;
+  }
+  .download .blue {
+    padding: 1.5rem 9rem;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    margin-bottom: 15rem;
+  }
+  .info {
+    margin-top: 10rem;
+  }
+  .info .title-text {
+    width: 70%;
+    font-size: 2.5rem;
+  }
+  .info .paragranp {
+    width: 70%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .box-info {
+    flex-direction: column;
+    margin: 3rem;
+  }
+  .box-info img {
+    width: 100%;
+  }
+  .box-info .description .subtitle {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .box-info .description .subparagranp {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+  .tactil {
+    width: 90%;
+    margin: 2rem;
+  }
+  .job {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+  .job .box {
+    margin: 2rem 0;
+  }
+  .job .box img {
+    width: 4rem;
+  }
+  .job .box .text-light {
+    font-size: 2rem;
+  }
+  .job .box .paragraph-light {
+    font-size: 1.2rem;
+    width: 75%;
+  }
+  .sitios {
+    margin: 5rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sitios img {
+    width: 70%;
+    margin: 2rem 0;
+  }
+  .pie-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pie-page img {
+    margin: 2rem;
+  }
+  .pie-page .links {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .pie-page .links .link {
+    margin-bottom: 2rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

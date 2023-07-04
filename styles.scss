@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow:wght@600&display=swap');
+
+* {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cyanColor:hsl(171, 66%, 44%);
+    --blueColor: hsl(233, 100%, 69%);
+    --greyColor:hsl(210, 10%, 33%);
+    --greyLinght: hsl(201, 11%, 66%);
+} 
+
+.portada {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+        margin-bottom: 3rem;
+    }
+
+    .title {
+        color: var(--greyColor);
+        font-family: 'Bai Jamjuree';
+        font-size: 2.1rem;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 1rem;
+        margin: 1rem;
+        width: 40%;
+        color: var(--greyLinght);
+        font-family: 'Bai Jamjuree';
+        line-height: 1.5rem;
+    }
+}
+
+.download {  
+    margin-bottom: 5rem;
+    .green {
+        cursor: pointer;
+        background: var(--cyanColor);
+        padding: .7rem 2rem;
+        border: none;
+        margin: .5rem;
+        border-radius: 30px;
+        border-bottom: 2px solid rgb(2, 129, 112);
+        color: white;
+        transition:.5s ease all;
+
+        &:hover {
+            opacity:.7;
+        }
+
+    }
+    .blue {
+        cursor: pointer;
+        background: var(--blueColor);
+        padding: .7rem 2rem;
+        border: none;
+        margin: .5rem;
+        border-radius: 30px;
+        border-bottom: 2px solid rgb(2, 61, 129);
+        color: white;
+        transition:.5s ease all;
+
+        &:hover {
+            opacity:.7;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+
+    .title-text {
+        font-family: 'Bai Jamjuree';
+        margin-bottom:1rem;
+        font-size: 1.8rem;
+    }
+    .paragranp {
+        font-family: 'Bai Jamjuree';
+        text-align: center;
+        width: 45%;
+        color: var(--greyLinght);
+        margin-bottom: 2rem;
+        line-height: 1.5rem;
+    }
+}
+
+.box-info {
+    display: flex;
+    margin: 4rem 0;
+
+    img {
+        width: 60%;
+        height: 30%;
+    }
+
+    .description {
+        margin: 7%;
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-family: 'Bai Jamjuree';
+        }
+
+        .subparagranp {
+            line-height: 1.5rem;
+            margin: .5rem 0 3rem 0;
+            font-family: 'Bai Jamjuree';
+            color: var(--greyLinght);
+        }
+    }
+}
+
+.tactil {
+    margin: 5rem 16%;
+
+}
+
+.job {
+    display: flex;
+    margin: 0 10rem;
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: .5rem;
+
+
+        img {
+            width: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .text-light {
+            font-family: 'Bai Jamjuree';
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .paragraph-light {
+            text-align: center;
+            width: 20rem;
+            font-family: 'Bai Jamjuree';
+            line-height: 1.5rem;
+            height: 10%;
+            color: var(--greyLinght);
+        }
+    }
+}
+
+.sitios {
+    margin: 5rem;
+    img {
+        width: 10rem;
+        margin: 2rem;
+    }
+}
+
+.pie-page {
+    background: #e7e7e7;
+    display: flex;
+    padding: 2rem 0;
+    justify-content: space-evenly;
+
+    img {
+        width: 4rem;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        .link {
+            text-decoration: none;
+            line-height: 2rem;
+            color: var(--greyColor);
+
+            &:hover {
+                color: var(--cyanColor);
+            }
+        }
+    }
+
+    .redes {
+        .img {
+            width: 1.5rem;
+            margin: .8rem;
+            padding-top: 1rem;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+
+@media (max-width:550px) {
+    .portada {
+        background-image: url(./images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+
+        .logo {
+            margin-top: 30rem;
+        }
+
+        .title {
+            width: 90%;
+            text-align: center;
+            font-size: 3rem;
+        }
+        .text {
+            width: 84%;
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    .download {
+        display: flex;
+        flex-direction: column;
+
+        .green {
+            margin-top: 2rem;
+            padding: 1.5rem 9rem;
+            font-size: 1.4rem;
+            border-radius: 50px;
+        }
+        .blue {
+            padding: 1.5rem 9rem;
+            font-size: 1.4rem;
+            border-radius: 50px;
+            margin-bottom: 15rem;
+        }
+    }
+
+    .info {
+        margin-top: 10rem;
+
+        .title-text {
+            width: 70%;
+            font-size: 2.5rem;
+        }
+
+        .paragranp {
+            width: 70%;
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+    }
+
+    .box-info {
+        flex-direction: column;
+        margin: 3rem;
+
+        img {
+            width: 100%;
+        }
+
+        .description {
+            .subtitle {
+                font-size: 2.5rem;
+                text-align: center;
+                margin-top: 4rem;
+            }
+
+            .subparagranp {
+                font-size: 1.2rem;
+                text-align: center;
+                line-height: 2rem;
+                
+            }
+        }
+    }
+
+    .tactil {
+        width: 90%;
+        margin: 2rem;
+    }
+
+    .job {
+        flex-direction: column;
+        margin: 3rem 0;
+
+        .box {
+            margin: 2rem 0;
+
+            img {
+                width: 4rem;
+            }
+
+            .text-light {
+                font-size: 2rem;
+            }
+            .paragraph-light {
+                font-size: 1.2rem;
+                width: 75%;
+            }
+        }
+    }
+
+    .sitios {
+        margin: 5rem 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 70%;
+            margin: 2rem 0;
+        }
+    }
+
+    .pie-page {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            margin: 2rem;
+        }
+
+        .links {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            .link {
+                margin-bottom: 2rem;
+            }
+        }       
+    }
+}
